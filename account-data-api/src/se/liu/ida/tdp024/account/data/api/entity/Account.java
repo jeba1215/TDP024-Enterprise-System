@@ -13,8 +13,5 @@ public interface Account extends Serializable {
     public void setPersonKey(String personKey);
     public void setBankKey(String bankKey);
     public void setAccountType(String accounttype);
-    public void setHoldings(double holdings);
-    
-    public boolean debit(double debit);
-    public boolean credit(double credit);
+    public void setHoldings(double holdings);    
 }

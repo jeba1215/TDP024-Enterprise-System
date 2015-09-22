@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/jesba289/Dokument/TDP024/project/account-util/src/se/liu/ida/tdp024/account/util/http/HTTPHelperImpl.java</file>
-            <file>file:/home/jesba289/Dokument/TDP024/project/account-util/src/se/liu/ida/tdp024/account/util/json/AccountJsonSerializer.java</file>
-            <file>file:/home/jesba289/Dokument/TDP024/project/account-util/src/se/liu/ida/tdp024/account/util/http/HTTPHelper.java</file>
-            <file>file:/home/jesba289/Dokument/TDP024/project/account-util/src/se/liu/ida/tdp024/account/util/json/AccountJsonSerializerImpl.java</file>
+            <file>file:/home/jesba289/Dokument/TDP024-Enterprise-System/account-util/src/se/liu/ida/tdp024/account/util/http/HTTPHelperImpl.java</file>
+            <file>file:/home/jesba289/Dokument/TDP024-Enterprise-System/account-util/src/se/liu/ida/tdp024/account/util/http/HTTPHelper.java</file>
+            <file>file:/home/jesba289/Dokument/TDP024-Enterprise-System/account-util/src/se/liu/ida/tdp024/account/util/json/AccountJsonSerializerImpl.java</file>
+            <file>file:/home/jesba289/Dokument/TDP024-Enterprise-System/account-util/src/se/liu/ida/tdp024/account/util/json/AccountJsonSerializer.java</file>
         </group>
     </open-files>
 </project-private>

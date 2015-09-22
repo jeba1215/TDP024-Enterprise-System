@@ -32,7 +32,6 @@ public class AccountJsonSerializerImpl implements AccountJsonSerializer {
             todoLogger.log(e);
             return null;
         }
-
     }
 
     @Override
