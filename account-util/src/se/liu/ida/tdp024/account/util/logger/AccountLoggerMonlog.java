@@ -9,7 +9,7 @@ public class AccountLoggerMonlog implements AccountLogger {
     private static final HTTPHelper httpHelper = new HTTPHelperImpl();
     
     //-- Set your API key here ----------//
-    private static final String apikey = " 089993388591bf592e238f327274811e7fd57816";
+    private static final String apikey = "089993388591bf592e238f327274811e7fd57816";
     //-----------------------------------//
     private static final String endpoint = "http://www.ida.liu.se/~TDP024/monlog/api/log/";
 

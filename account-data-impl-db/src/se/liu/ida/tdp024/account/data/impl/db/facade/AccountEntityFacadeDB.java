@@ -9,10 +9,14 @@ import se.liu.ida.tdp024.account.data.api.facade.AccountEntityFacade;
 import se.liu.ida.tdp024.account.data.impl.db.entity.AccountDB;
 import se.liu.ida.tdp024.account.data.impl.db.util.EMF;
 import se.liu.ida.tdp024.account.util.http.HTTPHelperImpl;
+import se.liu.ida.tdp024.account.util.logger.AccountLogger;
+import se.liu.ida.tdp024.account.util.logger.AccountLoggerMonlog;
 
 public class AccountEntityFacadeDB implements AccountEntityFacade {
-    
-    public long create(String accountType, String personKey, String bankKey){
+
+    private static final AccountLogger accountLogger = new AccountLoggerMonlog();
+
+    public String create(String accountType, String personKey, String bankKey){
         EntityManager em = EMF.getEntityManager();
         
         em.getTransaction().begin();
@@ -26,38 +30,22 @@ public class AccountEntityFacadeDB implements AccountEntityFacade {
         em.persist(account);
         em.getTransaction().commit();
         em.close();
-        return account.getId();
+        if(account.getId() != 0)
+            return "OK";
+        else{
+            accountLogger.log(
+                    AccountLogger.TodoLoggerLevel.CRITICAL,
+                    "Account couldn't be saved to database",
+                    "We could not get an id for personKey: " + personKey);
+            return "FAILED";
+        }
     }
     
-    public List<Account> find(String id) {
+    public List<Account> findById(String id) {
         
         EntityManager em = EMF.getEntityManager();        
         Query query = em.createQuery("SELECT a FROM AccountDB a where a.personKey = :id");
         query.setParameter("id", id);
         return query.getResultList();        
-    } 
-    
-    @Override
-    public boolean debit(double debit){
-        /*
-        if(account.getHoldings() > debit){
-            account.setHoldings(account.getHoldings() - debit);
-            return true;
-        }else{
-            return false;     
-        }
-                */
-        return true;
-    }
-    
-    @Override
-    public boolean credit(double credit){
-        /*
-        Account account = new AccountDB();
-        
-        account.setHoldings(account.getHoldings() + credit);
-        return true;
-        */
-        return true;
-    }
+    }   
 }

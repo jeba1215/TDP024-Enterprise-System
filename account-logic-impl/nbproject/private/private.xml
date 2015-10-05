@@ -5,6 +5,7 @@
         <group>
             <file>file:/home/jesba289/Dokument/TDP024-Enterprise-System/account-logic-impl/src/se/liu/ida/tdp024/account/logic/impl/facade/entity/Bank.java</file>
             <file>file:/home/jesba289/Dokument/TDP024-Enterprise-System/account-logic-impl/src/se/liu/ida/tdp024/account/logic/impl/facade/AccountLogicFacadeImpl.java</file>
+            <file>file:/home/jesba289/Dokument/TDP024-Enterprise-System/account-logic-impl/src/se/liu/ida/tdp024/account/logic/impl/facade/TransactionLogicFacadeImpl.java</file>
             <file>file:/home/jesba289/Dokument/TDP024-Enterprise-System/account-logic-impl/src/se/liu/ida/tdp024/account/logic/impl/facade/entity/Person.java</file>
         </group>
     </open-files>

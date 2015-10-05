@@ -14,13 +14,14 @@ import java.io.Serializable;
 public interface Transaction extends Serializable{
     public long getId();
     public String getType();
-    public float getAmount();
+    public String getCreated();
+    public long getAmount();
     public String getStatus();
     public Account getAccount();
     
-    public void setId();
-    public void setType();
-    public void setAmount();
-    public void setStatus();
-    public void setAccount();
+    public void setType(String type);
+    public void setCreated(String created);
+    public void setAmount(long amount);
+    public void setStatus(String status);
+    public void setAccount(Account account);
 }

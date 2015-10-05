@@ -55,7 +55,7 @@ public class AccountFindTest {
         
         
         String json = httpHelper.get(FinalConstants.ENDPOINT + "account/find/name", "name", "Marcus");
-        
+        System.out.println("JSON: " + json);
         Assert.assertEquals("[]", json);
         
         

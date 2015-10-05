@@ -28,6 +28,7 @@ public class HTTPHelperImpl implements HTTPHelper {
         String result = "";
         try {
             url = new URL(urlToRead);
+            System.out.println(url);
             conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
